@@ -107,7 +107,7 @@ public class WizardRepository implements CrudDao<Wizard> {
             );
             resultSet = statement.executeQuery();
 
-            List<Wizard> wizards = new ArrayList<>();
+            ArrayList<Wizard> wizards = new ArrayList<>();
 
             while (resultSet.next()) {
                 Long id = resultSet.getLong("id");
